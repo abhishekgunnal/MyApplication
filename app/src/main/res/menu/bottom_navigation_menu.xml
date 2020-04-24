@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item android:title="EBOOK"
+        android:icon="@drawable/ic_library_books_black_24dp"/>
+
+    <item android:title="MY COURSE"
+        android:icon="@drawable/ic_video_library_black_24dp"/>
+
+    <item android:title="SETTINGS"
+        android:icon="@drawable/ic_settings_black_24dp"/>
+</menu>
