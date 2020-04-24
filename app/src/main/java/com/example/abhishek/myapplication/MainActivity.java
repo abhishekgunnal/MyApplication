@@ -34,13 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void apiDashboard() {
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://5ea2d0c1b9f5ca00166c322a.mockapi.io/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-
-        ApiInterface apiInterface = retrofit.create(ApiInterface.class);
+        ApiInterface apiInterface = RetrofitClient.getRetrofitInstance().create(ApiInterface.class);
 
         Call<DashboardResponse> dashboardResponseCall = apiInterface.getDashboard();
 
